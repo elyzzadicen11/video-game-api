@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Car Finder</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+
+
+<body>
+    <header>
+        <h1>🎮 Video Game Dictionary</h1>
+        <p> A website powered by a REST API </p>
+    </header>
+    <main>
+
+        <!-- SEARCH -->
+        <section class="search">
+            <input type="text" id="searchInput" placeholder="Search for a video game...">
+            <button onclick="searchVGames()"> Search </button>
+            <button class="secondary" onclick="loadVGames()"> Show All </button>
+
+        </section>
+
+        <section>
+            <h2>Video Games</h2>
+            <div id="vgameList" class="vgame-list">
+                Loading content...
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> Data provided by the Video Game API </p>
+    </footer>
+    
+<div id="background-popup" class="background-popup">
+    <div id="popup">
+        <div id="popupHeader">
+            <span>GAME DETAILS</span>
+            <button id="closePopup">×</button>
+        </div>
+        <div id="gameInfo">
+            <h2 id="popupYear"></h2>
+            <h2 id="popupTitle"></h2>
+            <p id="popupGenre"></p>
+            <p id="popupPlatform"></p>
+            <p id="popupRating"></p>
+            <p id="popupDescription"></p>
+        </div>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
